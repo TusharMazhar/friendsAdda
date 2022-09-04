@@ -1,0 +1,80 @@
+// Global CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Register Page and Login page
+
+.formContainer{
+    background-color: rgb(14, 14, 45);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .formWrapper{
+        background-color: white;
+        padding: 30px 80px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        gap:15px;
+        align-items: center;
+
+        .logo{
+            color:red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .title{
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+
+            input{
+              width: 300px;
+              height: 40px;
+              padding: 10px;
+              border:none;
+              border-bottom:1px solid rgb(163, 159, 160);
+              &::placeholder{
+                color:rgb(172, 172, 172)
+              }
+            }
+
+            label{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                gap:10px;
+                color: rgb(207, 205, 205);
+            }
+
+            button{
+              width: 300px;
+              height: 40px;
+              background-color: blue;
+              color:white;
+              border: none;
+              font-weight: bold;
+              font-size:16px;
+              cursor: pointer;
+            }
+        }
+
+        p{
+            color:rgb(25, 25, 50);
+            font-size: 13px;
+        }
+    }
+}
+
+// Home Page
