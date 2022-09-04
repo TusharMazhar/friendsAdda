@@ -43,6 +43,7 @@
               height: 40px;
               padding: 10px;
               border:none;
+              outline: none;
               border-bottom:1px solid rgb(163, 159, 160);
               &::placeholder{
                 color:rgb(172, 172, 172)
@@ -78,3 +79,119 @@
 }
 
 // Home Page
+
+.homeContainer{
+    background-color: rgb(14, 14, 45) ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .homeWrapper{
+        border:1px solid white;
+        border-radius: 10px;
+        width:70%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sideBar{
+            flex:1;
+            background-color: rgb(196, 196, 196);
+
+            .navbar{
+                background-color: rgb(21, 15, 15);
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                padding: 10px;
+                align-items: center;
+
+                .logo{
+                    font-weight: bold;
+                }
+                .user{
+                    display: flex;
+                    gap:10px;
+
+                    img{
+                        background-color: white;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button{
+                        background-color: red;
+                        color:white;
+                        font-size: 12px;
+                        border:none;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+        .searchContainer{
+           input{
+             width:100%;
+             height: 40px;
+             border: none;
+             outline: none;
+             border-bottom: 2px solid rgb(198, 193, 193);
+             padding: 10px;
+             border: 2px solid rgb(199, 198, 198) ;
+             margin-top: 1px;
+             
+             &::placeholder{
+                font-size: 13px;
+                color:rgb(173, 172, 172)
+             }
+           }
+        }
+
+        .userMain{
+            overflow-y: scroll;
+            .userContainer{
+                background-color: rgb(51, 6, 6);
+                padding: 10px;
+    
+                display: flex;
+                align-items: center;
+                gap:10px;
+                margin: 5px;
+    
+                img{
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    object-fit:cover;
+    
+                }
+    
+                .userInfo{
+                    p{
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: rgb(32, 190, 32)
+                    }
+                    span{
+                        font-size:12px;
+                        color:rgb(201, 198, 198)
+                    }
+                }
+            }
+
+        }
+        
+        .chats{
+            flex:2;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+}
+
