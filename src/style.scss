@@ -107,7 +107,6 @@
                 height: 60px;
                 padding: 10px;
                 align-items: center;
-
                 .logo{
                     font-weight: bold;
                 }
@@ -154,6 +153,8 @@
         }
 
         .userMain{
+            overflow-y: scroll;
+            height: 475px;
             .userContainer{
                 background-color: rgb(51, 6, 6);
                 padding: 10px;
@@ -213,6 +214,29 @@
                 height: 470px;
                 background-color: rgb(233, 233, 233);
                 padding: 10px;
+                overflow-y: scroll;
+
+                .message{
+                    display: flex;
+                    .msgInfo{
+                        padding: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12px;
+                        color:rgb(204, 204, 204);
+                        img{
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .msgContent{
+                    max-width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    padding:10px
+                }
             }
             .ReplyContainer{
                 height: 46px;

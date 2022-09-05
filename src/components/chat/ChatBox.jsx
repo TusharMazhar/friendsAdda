@@ -12,6 +12,12 @@ const ChatBox = () => {
        <Message />
        <Message />
        <Message />
+       <Message />
+       <Message />
+       <Message />
+       <Message />
+       <Message />
+       <Message />
     </div>
   )
 }
