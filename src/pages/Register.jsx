@@ -1,14 +1,13 @@
 import React from 'react'
 import '../style.scss'
 import Avatar from '../images/avatar.jpg'
-import Chat from '../images/chat.jpg'
+import Chat from '../images/blood.png'
 
 const Register = () => {
   return (
     <div className='formContainer'>
        <div className='formWrapper'>
           <img src={Chat} alt='Avatar' width='100%' height='150px' />
-          <span className='logo'>Friends Adda</span>
           <span className='title'>Register</span>
           <form action=''>
               <input type='text' placeholder='Your name' />
