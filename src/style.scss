@@ -38,6 +38,15 @@
             flex-direction: column;
             gap:15px;
 
+            select{
+                width: 300px;
+                height: 40px;
+                padding: 10px;
+                border:none;
+                outline: none;
+                border-bottom:1px solid rgb(163, 159, 160);
+            }
+
             input{
               width: 300px;
               height: 40px;

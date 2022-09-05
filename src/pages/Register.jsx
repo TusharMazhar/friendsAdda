@@ -12,7 +12,19 @@ const Register = () => {
           <span className='title'>Register</span>
           <form action=''>
               <input type='text' placeholder='Your name' />
-              <input type='email'placeholder='Your Email' />
+              <input type='text' placeholder='Your Phone Number' />
+              <input type='text' placeholder='District Name' />
+              <select name="cars" id="cars">
+                <option selected disabled>Select Your Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+              </select>
               <input type='password' placeholder='Type Password' />
               <input style={{display:'none'}} type='file' id='file' />
               <label htmlFor='file'>

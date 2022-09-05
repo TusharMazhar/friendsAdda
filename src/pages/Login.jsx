@@ -10,7 +10,7 @@ const Login = () => {
           <span className='logo'>Friends Adda</span>
           <span className='title'>Login</span>
           <form action=''>
-              <input type='email'placeholder='Your Email' />
+              <input type='text'placeholder='Your Phone Number' />
               <input type='password' placeholder='Type Password' />
               <button>Sign in</button>
           </form>
