@@ -154,7 +154,6 @@
         }
 
         .userMain{
-            overflow-y: scroll;
             .userContainer{
                 background-color: rgb(51, 6, 6);
                 padding: 10px;
@@ -190,8 +189,78 @@
         .chats{
             flex:2;
             background-color: rgb(255, 255, 255);
+
+            .navbar{
+                background-color: rgb(34, 33, 33);
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                padding: 10px;
+                align-items: center;
+
+                .setting{
+                    gap:10px;
+                    img{
+                        gap:10px;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+
+            .messagesContainer{
+                height: 470px;
+                background-color: rgb(233, 233, 233);
+                padding: 10px;
+            }
+            .ReplyContainer{
+                height: 46px;
+                border: 2px solid white;
+                display: flex;
+
+                .reply{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   gap: 10px;
+
+                   img{
+                        gap:10px;
+                        cursor: pointer;
+                        margin-top:10px;
+                   }
+
+                   button{
+                        cursor: pointer;
+                        margin-left: 10px;
+                        background-color: blue;
+                        color:white;
+                        outline: none;
+                        border:none;
+                        padding: 10px 15px;
+                    
+                   }
+                }
+
+                input{
+                    width:80%;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    margin-top: 1px;
+                    
+                    &::placeholder{
+                       font-size: 13px;
+                       color:rgb(173, 172, 172)
+                    }
+                  }
+            }
         }
     }
 
 }
+
+
 
