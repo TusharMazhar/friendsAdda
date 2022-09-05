@@ -10,10 +10,10 @@ const Register = () => {
           <img src={Chat} alt='Avatar' width='100%' height='150px' />
           <span className='title'>Register</span>
           <form action=''>
-              <input type='text' placeholder='Your name' />
-              <input type='text' placeholder='Your Phone Number' />
-              <input type='text' placeholder='District Name' />
-              <select name="cars" id="cars">
+              <input type='text' placeholder='Your name' required />
+              <input type='text' placeholder='Your Phone Number' required />
+              <input type='text' placeholder='District Name' required />
+              <select name="cars" id="cars" required>
                 <option selected disabled>Select Your Blood Group</option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
@@ -24,8 +24,8 @@ const Register = () => {
                 <option value="AB+">AB+</option>
                 <option value="AB-">AB-</option>
               </select>
-              <input type='password' placeholder='Type Password' />
-              <input style={{display:'none'}} type='file' id='file' />
+              <input type='password' placeholder='Type Password' required />
+              <input style={{display:'none'}} type='file' id='file' required />
               <label htmlFor='file'>
                   <img src={Avatar} alt="Avatar" width={32}/>
                   <span>Upload your picture</span>

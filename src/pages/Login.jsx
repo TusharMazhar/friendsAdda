@@ -10,8 +10,8 @@ const Login = () => {
           <span className='logo'>Friends Adda</span>
           <span className='title'>Login</span>
           <form action=''>
-              <input type='text'placeholder='Your Phone Number' />
-              <input type='password' placeholder='Type Password' />
+              <input type='text'placeholder='Your Phone Number' required />
+              <input type='password' placeholder='Type Password' required />
               <button>Sign in</button>
           </form>
           <p>You don't have an account? Register</p>
